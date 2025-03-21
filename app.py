@@ -1,3 +1,9 @@
+pip freeze > requirements.txt
+streamlit==1.4.0
+joblib==1.0.1
+numpy==1.20.3
+scikit-learn==0.24.2
+
 import streamlit as st
 import joblib
 import numpy as np
