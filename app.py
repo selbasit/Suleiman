@@ -3,11 +3,6 @@ joblib
 numpy
 scikit-learn
 
-echo "streamlit" >> requirements.txt
-echo "joblib" >> requirements.txt
-echo "numpy" >> requirements.txt
-echo "scikit-learn" >> requirements.txt
-
 # Load the model and vectorizer
 model = joblib.load("spam_classifier_model.pkl")
 tfidf = joblib.load("tfidf_vectorizer.pkl")
