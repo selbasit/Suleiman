@@ -1,7 +1,14 @@
-streamlit
-joblib
-numpy
-scikit-learn
+import streamlit as st
+import joblib
+import numpy as np
+from sklearn import datasets
+
+# Ensure the current directory is the root of your project
+with open("requirements.txt", "a") as f:
+    f.write("streamlit\n")
+    f.write("joblib\n")
+    f.write("numpy\n")
+    f.write("scikit-learn\n")
 
 # Load the model and vectorizer
 model = joblib.load("spam_classifier_model.pkl")
